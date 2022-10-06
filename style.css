@@ -5,17 +5,17 @@
   font-family: "Poppins", sans-serif;
 }
 :root {
-  --white: #ffffff;
-  --off-white: #e5e5e5;
-  --transp-white-1: rgba(255, 255, 255, 0.25);
+  --white: #0c65eb;
+  --off-white: red;
+  --transp-white-1: rgb(175, 162, 162);
   --transp-white-2: rgba(255, 255, 255, 0.1);
   --blue-1: #95b4ca;
-  --blue-2: #565d6f;
+  --blue-2: #dde012;
   --shadow: rgba(3, 46, 87, 0.2);
 }
 body {
   height: 100vh;
-  background: linear-gradient(135deg, var(--blue-1), var(--blue-2));
+  background-color: linear-gradient(135deg, var(--blue-1), var(--blue-2));
 }
 .wrapper {
   font-size: 16px;
@@ -146,3 +146,25 @@ body {
     font-size: 14px;
   }
 }
+
+* {
+  margin: 10;
+  padding: 10;
+}
+
+.navbar {
+  display: flex;
+  background-color: #0eb358;
+  font-size: 2rem;
+  height: 4rem;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.menu {
+  margin: 0 3rem;
+  justify-content:end;
+  font-family: 'Franklin Gothic Medium',
+      Arial, sans-serif;
+}
+
