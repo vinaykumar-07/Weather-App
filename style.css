@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif; 
 }
 :root {
   --white: #0c65eb;
@@ -14,17 +14,23 @@
   --shadow: rgba(3, 46, 87, 0.2);
 }
 body {
-  height: 100vh;
+  height: 150vh;
   background-color: linear-gradient(135deg, var(--blue-1), var(--blue-2));
+  width: 100%;
+  
 }
 .wrapper {
   font-size: 16px;
   width: 90vw;
-  max-width: 28em;
+  max-width: 30em;
+  height: 75px;
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 35%;
   left: 50%;
+
+ 
+  
 }
 .container {
   width: 100%;
@@ -141,6 +147,33 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
+
+/* navigation bar */
+.navbar{
+  position: relative;
+  z-index: 100;
+  padding-left: 0;
+  padding-bottom: 1rem;
+  background-color: #0eb358;
+}
+.navbar-brand{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #fff;
+  margin-left: 10px;
+
+}
+.nav-item{
+  padding: 0 18px;
+}
+.nav-link{
+  font-size: 1.2rem;
+  color: grey;
+}
+
+
+
 @media screen and (max-width: 450px) {
   .wrapper {
     font-size: 14px;
@@ -152,14 +185,7 @@ body {
   padding: 10;
 }
 
-.navbar {
-  display: flex;
-  background-color: #0eb358;
-  font-size: 2rem;
-  height: 4rem;
-  align-items: center;
-  padding-left: 5px;
-}
+
 
 .menu {
   margin: 0 3rem;
